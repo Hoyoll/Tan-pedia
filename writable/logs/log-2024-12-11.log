@@ -1,0 +1,640 @@
+ERROR - 2024-12-11 02:20:16 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'tb_mahasiswa' in D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('127.0.0.1', 'root', '', 'tb_mahasiswa', 3306, '', 0)
+#1 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Laragon\laragon\www\Tan.pedia\app\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * from t...')
+#4 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DataTest->index()
+#5 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+#6 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 D:\Laragon\laragon\www\Tan.pedia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'tb_mahasiswa' in D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Laragon\laragon\www\Tan.pedia\app\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * from t...')
+#3 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DataTest->index()
+#4 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+#5 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#7 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 D:\Laragon\laragon\www\Tan.pedia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+CRITICAL - 2024-12-11 02:20:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tb_mahasiswa'
+[Method: GET, Route: test]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * from tb_mahasiswa')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DataTest->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-11 02:20:51 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'tb_mahasiswa' in D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('127.0.0.1', 'root', '', 'tb_mahasiswa', 3306, '', 0)
+#1 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Laragon\laragon\www\Tan.pedia\app\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DataTest->index()
+#5 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+#6 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 D:\Laragon\laragon\www\Tan.pedia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'tb_mahasiswa' in D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Laragon\laragon\www\Tan.pedia\app\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#3 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DataTest->index()
+#4 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+#5 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#7 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 D:\Laragon\laragon\www\Tan.pedia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+CRITICAL - 2024-12-11 02:20:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tb_mahasiswa'
+[Method: GET, Route: test]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tb_mahasiswa')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DataTest->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-11 02:20:58 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'tb_mahasiswa' in D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('127.0.0.1', 'root', '', 'tb_mahasiswa', 3306, '', 0)
+#1 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Laragon\laragon\www\Tan.pedia\app\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DataTest->index()
+#5 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+#6 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 D:\Laragon\laragon\www\Tan.pedia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'tb_mahasiswa' in D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Laragon\laragon\www\Tan.pedia\app\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#3 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DataTest->index()
+#4 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+#5 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#7 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 D:\Laragon\laragon\www\Tan.pedia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+CRITICAL - 2024-12-11 02:20:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tb_mahasiswa'
+[Method: GET, Route: test]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tb_mahasiswa')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DataTest->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-11 02:21:03 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'tb_mahasiswa' in D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('127.0.0.1', 'root', '', 'tb_mahasiswa', 3306, '', 0)
+#1 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Laragon\laragon\www\Tan.pedia\app\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DataTest->index()
+#5 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+#6 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 D:\Laragon\laragon\www\Tan.pedia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'tb_mahasiswa' in D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Laragon\laragon\www\Tan.pedia\app\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#3 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DataTest->index()
+#4 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+#5 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#7 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 D:\Laragon\laragon\www\Tan.pedia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+CRITICAL - 2024-12-11 02:21:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tb_mahasiswa'
+[Method: GET, Route: test]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tb_mahasiswa')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DataTest->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-11 02:21:23 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'tb_mahasiswa' in D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('127.0.0.1', 'root', '', 'tb_mahasiswa', 3306, '', 0)
+#1 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Laragon\laragon\www\Tan.pedia\app\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DataTest->index()
+#5 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+#6 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 D:\Laragon\laragon\www\Tan.pedia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'tb_mahasiswa' in D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Laragon\laragon\www\Tan.pedia\app\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#3 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DataTest->index()
+#4 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+#5 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#7 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 D:\Laragon\laragon\www\Tan.pedia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+CRITICAL - 2024-12-11 02:21:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tb_mahasiswa'
+[Method: GET, Route: test]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tb_mahasiswa;')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DataTest->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-11 02:21:24 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'tb_mahasiswa' in D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('127.0.0.1', 'root', '', 'tb_mahasiswa', 3306, '', 0)
+#1 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Laragon\laragon\www\Tan.pedia\app\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DataTest->index()
+#5 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+#6 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 D:\Laragon\laragon\www\Tan.pedia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'tb_mahasiswa' in D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Laragon\laragon\www\Tan.pedia\app\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#3 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DataTest->index()
+#4 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+#5 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#7 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 D:\Laragon\laragon\www\Tan.pedia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+CRITICAL - 2024-12-11 02:21:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tb_mahasiswa'
+[Method: GET, Route: test]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tb_mahasiswa;')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DataTest->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-11 02:21:24 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'tb_mahasiswa' in D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('127.0.0.1', 'root', '', 'tb_mahasiswa', 3306, '', 0)
+#1 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Laragon\laragon\www\Tan.pedia\app\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DataTest->index()
+#5 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+#6 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 D:\Laragon\laragon\www\Tan.pedia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'tb_mahasiswa' in D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Laragon\laragon\www\Tan.pedia\app\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#3 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DataTest->index()
+#4 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+#5 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#7 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 D:\Laragon\laragon\www\Tan.pedia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+CRITICAL - 2024-12-11 02:21:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tb_mahasiswa'
+[Method: GET, Route: test]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tb_mahasiswa;')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DataTest->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-11 02:21:25 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'tb_mahasiswa' in D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('127.0.0.1', 'root', '', 'tb_mahasiswa', 3306, '', 0)
+#1 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Laragon\laragon\www\Tan.pedia\app\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DataTest->index()
+#5 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+#6 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 D:\Laragon\laragon\www\Tan.pedia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'tb_mahasiswa' in D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Laragon\laragon\www\Tan.pedia\app\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#3 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DataTest->index()
+#4 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+#5 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#7 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 D:\Laragon\laragon\www\Tan.pedia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+CRITICAL - 2024-12-11 02:21:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tb_mahasiswa'
+[Method: GET, Route: test]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tb_mahasiswa;')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DataTest->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-11 02:21:25 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'tb_mahasiswa' in D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('127.0.0.1', 'root', '', 'tb_mahasiswa', 3306, '', 0)
+#1 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Laragon\laragon\www\Tan.pedia\app\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DataTest->index()
+#5 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+#6 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 D:\Laragon\laragon\www\Tan.pedia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'tb_mahasiswa' in D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Laragon\laragon\www\Tan.pedia\app\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#3 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DataTest->index()
+#4 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+#5 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#7 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 D:\Laragon\laragon\www\Tan.pedia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+CRITICAL - 2024-12-11 02:21:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tb_mahasiswa'
+[Method: GET, Route: test]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tb_mahasiswa;')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DataTest->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-11 02:21:25 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'tb_mahasiswa' in D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('127.0.0.1', 'root', '', 'tb_mahasiswa', 3306, '', 0)
+#1 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Laragon\laragon\www\Tan.pedia\app\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DataTest->index()
+#5 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+#6 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 D:\Laragon\laragon\www\Tan.pedia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'tb_mahasiswa' in D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Laragon\laragon\www\Tan.pedia\app\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#3 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DataTest->index()
+#4 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+#5 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#7 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 D:\Laragon\laragon\www\Tan.pedia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+CRITICAL - 2024-12-11 02:21:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tb_mahasiswa'
+[Method: GET, Route: test]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tb_mahasiswa;')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DataTest->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-11 02:22:18 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'tb_mahasiswa' in D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('127.0.0.1', 'root', '', 'tb_mahasiswa', 3306, '', 0)
+#1 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Laragon\laragon\www\Tan.pedia\app\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DataTest->index()
+#5 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+#6 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 D:\Laragon\laragon\www\Tan.pedia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'tb_mahasiswa' in D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Laragon\laragon\www\Tan.pedia\app\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#3 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DataTest->index()
+#4 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+#5 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#7 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 D:\Laragon\laragon\www\Tan.pedia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+CRITICAL - 2024-12-11 02:22:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tb_mahasiswa'
+[Method: GET, Route: test]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tb_mahasiswa;')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DataTest->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-11 02:26:20 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'tb_mahasiswa' in D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('localhost', 'root', '', 'tb_mahasiswa', 3306, '', 0)
+#1 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Laragon\laragon\www\Tan.pedia\app\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#4 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DataTest->index()
+#5 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+#6 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 D:\Laragon\laragon\www\Tan.pedia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'tb_mahasiswa' in D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Laragon\laragon\www\Tan.pedia\app\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#3 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DataTest->index()
+#4 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+#5 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#7 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 D:\Laragon\laragon\www\Tan.pedia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+CRITICAL - 2024-12-11 02:26:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tb_mahasiswa'
+[Method: GET, Route: test]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\DataTest.php(12): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `tb_mahasiswa`')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DataTest->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-11 02:27:41 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'tb_mahasiswa' in D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('localhost', 'root', '', 'tb_mahasiswa', 3306, '', 0)
+#1 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Laragon\laragon\www\Tan.pedia\app\Controllers\DataTest.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#4 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DataTest->index()
+#5 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+#6 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 D:\Laragon\laragon\www\Tan.pedia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'tb_mahasiswa' in D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Laragon\laragon\www\Tan.pedia\app\Controllers\DataTest.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#3 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DataTest->index()
+#4 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+#5 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#7 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 D:\Laragon\laragon\www\Tan.pedia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+CRITICAL - 2024-12-11 02:27:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tb_mahasiswa'
+[Method: GET, Route: test]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\DataTest.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `tb_mahasiswa`')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DataTest->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-11 02:30:24 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'tb_mahasiswa' in D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('localhost', 'root', '', 'tb_mahasiswa', 3306, '', 0)
+#1 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Laragon\laragon\www\Tan.pedia\app\Controllers\DataTest.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#4 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DataTest->index()
+#5 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+#6 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 D:\Laragon\laragon\www\Tan.pedia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'tb_mahasiswa' in D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Laragon\laragon\www\Tan.pedia\app\Controllers\DataTest.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#3 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DataTest->index()
+#4 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+#5 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#7 D:\Laragon\laragon\www\Tan.pedia\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 D:\Laragon\laragon\www\Tan.pedia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+CRITICAL - 2024-12-11 02:30:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tb_mahasiswa'
+[Method: GET, Route: test]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\DataTest.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `tb_mahasiswa`')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DataTest->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-11 02:33:08 --> CodeIgniter\Exceptions\ConfigException: Invalid DBDriver name: "MySQL"
+[Method: GET, Route: test]
+in SYSTEMPATH\Database\Database.php on line 172.
+ 1 SYSTEMPATH\Database\Database.php(59): CodeIgniter\Database\Database->checkDbExtension('MySQL')
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 APPPATH\Controllers\DataTest.php(10): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DataTest->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-11 03:08:50 --> ParseError: syntax error, unexpected token "return"
+[Method: GET, Route: test]
+in APPPATH\Controllers\DataTest.php on line 20.
+ 1 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('D:\\Laragon\\laragon\\www\\Tan.pedia\\vendor\\composer/../../app\\Controllers\\DataTest.php')
+ 2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controllers\\DataTest')
+ 3 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\DataTest', true)
+ 4 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-11 03:10:43 --> ErrorException: Undefined variable $data
+[Method: GET, Route: test]
+in APPPATH\Controllers\DataTest.php on line 16.
+ 1 APPPATH\Controllers\DataTest.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'D:\\Laragon\\laragon\\www\\Tan.pedia\\app\\Controllers\\DataTest.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DataTest->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-11 03:35:15 --> ParseError: syntax error, unexpected token "echo"
+[Method: GET, Route: test]
+in APPPATH\Views\test.php on line 21.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('test', [], true)
+ 3 APPPATH\Controllers\DataTest.php(27): view('test', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DataTest->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-11 03:35:19 --> ParseError: syntax error, unexpected token "echo"
+[Method: GET, Route: test]
+in APPPATH\Views\test.php on line 21.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('test', [], true)
+ 3 APPPATH\Controllers\DataTest.php(27): view('test', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DataTest->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-11 03:35:21 --> ParseError: syntax error, unexpected token "echo"
+[Method: GET, Route: test]
+in APPPATH\Views\test.php on line 21.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('test', [], true)
+ 3 APPPATH\Controllers\DataTest.php(27): view('test', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DataTest->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-11 03:49:55 --> Error: Call to undefined function out()
+[Method: GET, Route: test]
+in APPPATH\Views\test.php on line 22.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('test', [], true)
+ 4 APPPATH\Controllers\DataTest.php(26): view('test', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DataTest->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-11 03:54:54 --> Error: Call to undefined function out()
+[Method: GET, Route: test]
+in APPPATH\Views\test.php on line 22.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('test', [], true)
+ 4 APPPATH\Controllers\DataTest.php(26): view('test', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DataTest->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-11 03:55:11 --> Error: Call to undefined function out()
+[Method: GET, Route: test]
+in APPPATH\Views\test.php on line 22.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('test', [], true)
+ 4 APPPATH\Controllers\DataTest.php(26): view('test', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DataTest->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataTest))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
